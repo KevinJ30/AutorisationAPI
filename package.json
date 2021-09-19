@@ -1,6 +1,7 @@
 {
   "name": "server_auth",
   "scripts": {
+    "start" : "nodemon index.js",
     "cli": "npx sequelize-cli",
     "pretest": "cross-env NODE_ENV=test sequelize-cli db:migrate && cross-env NODE_ENV=test sequelize-cli db:seed:all",
     "test": "npx jest --forceExit --runInBand",
